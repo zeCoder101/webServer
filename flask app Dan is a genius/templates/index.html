@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<title>web server</title>
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+			<div class="p-3 mb-2 bg-primary text-white">{{current_user.name}}</div>
+		</head>
+		<body>
+			<h1>hello {{name}}</h1>
+			<p>
+				Welcome to our web page
+			</p>
+			<p>
+				Or you can say
+				<a role="button" class="btn btn-dark" href="/goodbye?name={{name}}">goodbye</a>
+			</p>
+			<p>login with  <a role="button" class="btn btn-dark" href="/login">Mogin!</a>
+			<p></p>
+			<a role="button" class="btn btn-dark" href="/menu">Menu</a>
+		</body>
+</html>
